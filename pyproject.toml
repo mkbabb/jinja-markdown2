@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jinja-markdown2"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Mike Babb <mike7400@gmail.com>"]
 
