@@ -1,9 +1,6 @@
 from typing import *
 
-
 import markdown2
-
-
 from jinja2.ext import Extension
 from jinja2.nodes import CallBlock
 
@@ -14,7 +11,11 @@ class MarkdownExtension(Extension):
     def __init__(
         self,
         environment,
-        md_extras=["footnotes", "markdown-in-html", "fenced-code-blocks",],
+        md_extras=[
+            "footnotes",
+            "markdown-in-html",
+            "fenced-code-blocks",
+        ],
     ):
         super(MarkdownExtension, self).__init__(environment)
         self.md_extras = set(md_extras)
