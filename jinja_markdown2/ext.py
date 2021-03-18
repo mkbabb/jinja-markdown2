@@ -10,8 +10,8 @@ class MarkdownExtension(Extension):
 
     def __init__(
         self,
-        environment,
-        md_extras=[
+        environment: Any,
+        md_extras: List[str] = [
             "footnotes",
             "markdown-in-html",
             "fenced-code-blocks",
