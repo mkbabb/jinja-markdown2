@@ -1,3 +1,4 @@
+import textwrap
 from typing import *
 
 import markdown2
@@ -19,9 +20,9 @@ class MarkdownExtension(Extension):
     ):
         super(MarkdownExtension, self).__init__(environment)
         self.md_extras = set(md_extras)
-        self.t_md_extras = set()
+        self.t_md_extras: Set[str] = set()
 
-    def parse(self, parser) -> CallBlock:
+    def parse(self, parser: Any) -> CallBlock:
         lineno = next(parser.stream).lineno
 
         if parser.stream.current.type == "pipe":
@@ -39,9 +40,11 @@ class MarkdownExtension(Extension):
 
         return CallBlock(self.call_method("_markdown"), [], [], body).set_lineno(lineno)
 
-    def _markdown(self, caller) -> Text:
+    def _markdown(self, caller: Callable[[], Text]) -> Text:
         md = markdown2.Markdown(extras=self.t_md_extras)
-        text: Text = caller()
+        text = caller()
         text = textwrap.dedent(text.strip())
 
-        return md.convert(text)
+        mdd: Text = md.convert(text)
+
+        return mdd
