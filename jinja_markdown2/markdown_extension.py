@@ -34,7 +34,7 @@ class MarkdownExtension(Extension):
             )
             self.t_md_extras = self.md_extras | names
         else:
-            self.t_md_extras = {}
+            self.t_md_extras = self.md_extras
 
         body = parser.parse_statements(["name:endmarkdown"], drop_needle=True)
 
