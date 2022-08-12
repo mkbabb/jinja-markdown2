@@ -1,14 +1,15 @@
 [tool.poetry]
 name = "jinja-markdown2"
-version = "0.1.5"
+version = "0.1.6"
 description = ""
 authors = ["Mike Babb <mike7400@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 Jinja2 = "^3.1.2"
+mypy = "^0.971"
 markdown2 = "^2.4.3"
-mypy = "^0.961"
+
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
