@@ -73,7 +73,7 @@ python-versions = ">=3.7"
 name = "mypy"
 version = "0.971"
 description = "Optional static typing for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -91,7 +91,7 @@ reports = ["lxml"]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -119,7 +119,7 @@ test = ["appdirs (==1.4.4)", "pytest-cov (>=2.7)", "pytest-mock (>=3.6)", "pytes
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -127,14 +127,14 @@ python-versions = ">=3.7"
 name = "typing-extensions"
 version = "4.3.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "f9abde2ebc85e82a82326b6c2d64d13a1fcf8345c8b2387c06e504f544533ce1"
+content-hash = "8529250ad119ff5969e1cfc8d18a2bf632f73d7fee9d3b36a3526a5b69879fea"
 
 [metadata.files]
 black = [
