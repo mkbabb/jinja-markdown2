@@ -1,4 +1,5 @@
 import jinja2
+
 from jinja_markdown2 import MarkdownExtension
 
 template_path = "tests/template.md"
