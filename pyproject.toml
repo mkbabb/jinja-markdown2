@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jinja-markdown2"
-version = "0.3.0"
+version = "0.4.0"
 description = "A Jinja2 extension for rendering Markdown with markdown2."
 authors = ["Mike Babb <mike7400@gmail.com>"]
 readme = "README.md"
@@ -10,12 +10,12 @@ repository = "https://github.com/mkbabb/jinja-markdown2"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-jinja2 = "^3.1.2"
-markdown2 = "^2.4.8"
+jinja2 = "^3.1.4"
+markdown2 = "^2.4.13"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.3.0"
-black = "^23.3.0"
+mypy = "^1.10.0"
+black = "^24.4.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
